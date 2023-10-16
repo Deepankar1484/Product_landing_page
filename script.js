@@ -1,0 +1,19 @@
+// Script for navigation bar
+const bar= document.getElementById("bar");
+const close= document.getElementById("close");
+const nav= document.getElementById('navbar');
+
+if (bar){
+    bar.addEventListener('click',() =>{
+        nav.classList.add('active2')
+    })
+}
+
+if (close){
+    close.addEventListener('click',() =>{
+        nav.classList.remove('active2')
+    })
+}
+function change(s){
+    document.getElementById("big").src=s.src;
+}
